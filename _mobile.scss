@@ -1,0 +1,137 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        padding-top: 32px;
+        border-bottom: none;
+
+        &_input {
+            display: none;
+        }
+    }
+
+    .menu {
+        display: none;
+
+        &-mob {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+    }
+
+    .header-logo {
+        &_img {
+            width: 99px;
+        }
+    }     
+    .product-box{
+        padding-top: 48px;
+    }
+    .subject{
+        font-size: 18px;
+    }
+    .price, .old_price {
+        font-size: 18px;
+    }
+    .cart{
+        &_subject{
+            font-size: 18px;
+        }
+        &_slogan{
+            font-size: 12px;
+        }
+        &_price{
+            font-size: 12px;
+        }
+        &_img {
+            display: none;
+        }
+
+        &_botton{
+            margin-top: 7px;
+        }
+
+        &_btn{
+            width: 166px;
+            height: 37px;
+            font-size: 12px;
+
+            &_form{
+              width: 290px;
+              height: 41px;
+              font-size: 16px;
+            }
+        }
+        &_form {
+            grid-column: span 8;
+        }
+    }
+    .top {
+        &_heading {
+            font-size: 48px;
+            text-align: center;
+        }
+
+        &_subtitle {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        &_content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_link {
+            font-size: 14px;
+        }
+    }
+   
+    .title {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .catalog{
+
+        &_heading{
+            text-align: center;
+            font-size: 48px;
+            margin-top: 82px;
+        }
+    }
+
+    
+    
+    .for {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+
+        &_item {
+            grid-column: 1 / -1;
+            height: 375px;
+            font-size: 28px;
+
+            &_big {
+               height: 244px;
+            }
+        }
+    }
+
+    .footer{
+        padding-bottom: 32px;
+
+        &_content{
+            justify-content: center;
+            gap: 32px;
+        }
+
+        &_info {
+            gap: 100px;
+        }
+    }
+}

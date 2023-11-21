@@ -1,0 +1,237 @@
+.top-cart {
+    height: 400px;
+    background-image: url(img/topcart.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heading-big {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 70px;
+    margin-top: 127px;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+    &_name-box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    &_item {
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        transition: all 0.3s;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+
+    &_info {
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &_subject {
+        color: #000;
+        font-size: 24px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    &_slogan {
+        color: #888;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &_price {
+        color: #050505;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &_img {
+        width: 173px;
+        height: 173px;
+    }
+
+    &_left {
+        display: flex;
+        gap: 32px;
+
+    }
+
+    &_form {
+        border-radius: 20px;
+        background: #F7F6F6;
+        height: 556px;
+        grid-column: span 4;
+
+    }
+
+    &_content {
+        grid-column: span 8;
+    }
+
+    &_input {
+        width: 71px;
+        height: 51px;
+        border-radius: 6px;
+        background: #F7F6F6;
+        outline: none;
+        border: none;
+        color: #000;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 210%;
+        box-sizing: border-box;
+        text-align: center;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    &_link-box {
+        display: flex;
+        gap: 30px;
+    }
+
+    &_link-go {
+        color: black;
+        text-decoration-line: underline;
+        height: 29px;
+        width: 85px;
+        font-size: 14px;
+        transition: all 0.3s;
+        &:hover{
+            color: #888;
+            text-decoration: underline;
+        }
+    }
+
+
+    &_botton {
+        display: flex;
+        gap: 7px;
+        margin-top: 25px;
+    }
+
+    &_btn {
+        width: 200px;
+        height: 37px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        border: 1px solid #000;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        background-color: transparent;
+        font-family: Montserrat;
+        transition: all 0.3s;
+
+        &_form {
+            align-self: center;
+            width: 290px;
+            animation:heartbeat 2s ease-in-out infinite both
+        }
+
+        &:hover {
+            background-color: #000;
+            color: #FFF;
+            transform: scale(1.05);
+        }
+    }
+
+}
+
+.form {
+    padding-top: 42px;
+    padding-left: 28px;
+    padding-right: 32px;
+
+    &_price-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    &_title {
+        color: #000;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 35px;
+    }
+
+    &_input {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 41px;
+    }
+
+    &_item {
+        outline: none;
+        padding-bottom: 3px;
+        border: none;
+        border-bottom: 1px solid #CACDD8;
+        font-size: 14px;
+        background: transparent;
+        color: #000;
+        font-weight: 400;
+        font-family: Montserrat;
+
+        &::placeholder {
+            color: #000;
+        }
+    }
+
+    &_result {
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 64px;
+        margin-bottom: 18px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+    }
+
+    &_result_price {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+}
